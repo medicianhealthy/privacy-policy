@@ -1,36 +1,83 @@
-<pre>
-PRIVACY POLICY Last Updated: May 27, 2026
-1. INTRODUCTION Wise Owl Studio ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how our mobile application, "Medication Wizard" (the "App"), handles information. By using the App, you agree to the collection and use of information in accordance with this policy.
-2. DATA PRIVACY & HEALTH INFORMATION Your health and medication data are highly sensitive.
-•
-LOCAL STORAGE: All medication names, dosages, schedules, and history are stored locally on your device using the Room Persistence Library and SharedPreferences. We do not have access to this data.
-•
-CLOUD BACKUP: If you use the Premium "Cloud Backup" feature, your data is encrypted and stored in your private Google Drive account (App Data folder). We never see, collect, or store this data on our own servers.
-3. DATA COLLECTION BY THIRD-PARTY SERVICES To provide a high-quality experience, the App uses third-party SDKs that may collect information used to identify you or your device. These include:
-•
-GOOGLE PLAY SERVICES: Used for core app functionality and account authentication.
-•
-ADMOB (Google): Used to display advertisements. AdMob may collect your advertising ID and usage statistics to provide relevant ads.
-•
-FIREBASE ANALYTICS: Used to understand user behavior and improve App features.
-•
-FIREBASE CRASHLYTICS: Used to track technical crashes and improve App performance.
-•
-GOOGLE PLAY BILLING: Used to process Premium subscriptions. All financial transactions are handled by Google; we do not store or have access to your credit card details.
-4. PERMISSIONS WE REQUEST The App requires certain system permissions to function correctly:
-•
-NOTIFICATIONS: To send you medication reminders.
-•
-EXACT ALARMS: To ensure reminders fire at the precise minute scheduled.
-•
-INTERNET ACCESS: To sync Premium status and load advertisements.
-5. DATA RETENTION & DELETION You have full control over your data.
-•
-You can delete all medication records and history at any time through the "Start Fresh" option in the App Settings.
-•
-Uninstalling the App will remove all locally stored data from your device.
-6. CHILDREN’S PRIVACY Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent and aware that your child has provided us with personal data, please contact us.
-7. COMPLIANCE (GDPR/CCPA) We respect your rights under the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). Since we do not store your data on our own servers, your right to access, port, or delete your data is exercised directly by you through the App's interface.
-8. CHANGES TO THIS POLICY We may update our Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy.
-9. CONTACT US If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: medicationwizard@gmail.com
-<pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Wise Owl Studio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        h1 { color: #00796B; border-bottom: 2px solid #e0f2f1; padding-bottom: 10px; }
+        h2 { color: #004D40; margin-top: 30px; font-size: 1.4em; }
+        p { margin-bottom: 15px; text-align: justify; }
+        ul { margin-bottom: 20px; }
+        li { margin-bottom: 8px; }
+        .last-updated { font-style: italic; color: #777; margin-bottom: 30px; }
+        .contact-box { background: #e0f2f1; padding: 20px; border-radius: 8px; margin-top: 40px; }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last Updated: May 27, 2026</p>
+
+    <p>Wise Owl Studio ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how our mobile application, <strong>Medication Wizard</strong> (the "App"), handles information.</p>
+
+    <h2>1. Data Privacy & Health Information</h2>
+    <p>Your health and medication data are highly sensitive. We have designed the App with a "Privacy First" approach:</p>
+    <ul>
+        <li><strong>Local Storage:</strong> All medication names, dosages, schedules, and history are stored locally on your device using the Room Persistence Library and SharedPreferences. We do not have access to this data.</li>
+        <li><strong>Cloud Backup:</strong> If you use the Premium "Cloud Backup" feature, your data is encrypted and stored in your private Google Drive account. We never see, collect, or store this data on our own servers.</li>
+    </ul>
+
+    <h2>2. Third-Party Service Providers</h2>
+    <p>To provide a high-quality experience and maintain technical stability, the App uses third-party SDKs. These services may collect information used to identify your device:</p>
+    <ul>
+        <li><strong>Google Play Services:</strong> Core app functionality and authentication.</li>
+        <li><strong>AdMob (Google):</strong> Displays advertisements. AdMob may collect your advertising ID to provide relevant ads.</li>
+        <li><strong>Firebase Analytics:</strong> Helps us understand user behavior to improve App features.</li>
+        <li><strong>Firebase Crashlytics:</strong> Tracks technical crashes to improve stability.</li>
+        <li><strong>Google Play Billing:</strong> Processes Premium upgrades. All transactions are handled by Google; we do not store or access your credit card details.</li>
+    </ul>
+
+    <h2>3. System Permissions</h2>
+    <p>The App requires the following permissions to function as intended:</p>
+    <ul>
+        <li><strong>Notifications:</strong> To send you timely medication reminders.</li>
+        <li><strong>Exact Alarms:</strong> To ensure reminders fire at the precise minute scheduled.</li>
+        <li><strong>Internet:</strong> To verify Premium status and load relevant content/ads.</li>
+    </ul>
+
+    <h2>4. Children’s Privacy</h2>
+    <p>Our App does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent and aware that your child has provided us with personal data, please contact us immediately.</p>
+
+    <h2>5. GDPR & CCPA Compliance</h2>
+    <p>We respect your rights under the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). Because we do not store your data on our servers, you exercise your rights (access, correction, deletion) directly through the App's interface or by uninstalling the App.</p>
+
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
+        <p><strong>[YOUR_EMAIL_HERE]</strong></p>
+    </div>
+</div>
+
+</body>
+</html>

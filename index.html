@@ -3,87 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Wise Medical Apps</title>
+    <title>Privacy Policy - Medication Wizard</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #2c3e50; max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: #fcfcfc; }
-        .container { background: white; padding: 45px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 8px solid #00796B; }
-        h1 { color: #00796B; margin-top: 0; font-size: 2.2em; border-bottom: 2px solid #e0f2f1; padding-bottom: 15px; }
-        h2 { color: #004D40; margin-top: 35px; font-size: 1.5em; display: flex; align-items: center; }
-        h2::before { content: "•"; color: #4DB6AC; margin-right: 10px; font-size: 1.5em; }
-        p { margin-bottom: 18px; text-align: justify; }
-        ul { margin-bottom: 25px; padding-left: 20px; }
-        li { margin-bottom: 12px; }
-        strong { color: #1a252f; }
-        .last-updated { font-style: italic; color: #7f8c8d; margin-bottom: 40px; font-size: 0.95em; }
-        .contact-section { background: #e0f2f1; padding: 25px; border-radius: 12px; margin-top: 50px; border: 1px solid #b2dfdb; }
-        .contact-section h2::before { content: ""; margin: 0; }
-        .highlight { color: #00796B; font-weight: bold; }
-        @media (max-width: 600px) { body { padding: 15px; } .container { padding: 25px; } h1 { font-size: 1.8em; } }
+        /* FIXED: Added padding-top so it doesn't touch the clock/battery bar */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            line-height: 1.5; 
+            color: #333; 
+            padding: 50px 24px 40px 24px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background-color: #ffffff;
+        }
+        
+        h1 { color: #00695C; font-size: 28px; margin-bottom: 8px; }
+        .last-updated { color: #888; font-size: 14px; font-style: italic; margin-bottom: 32px; display: block; }
+        h2 { color: #004D40; font-size: 20px; border-bottom: 1px solid #eee; padding-bottom: 8px; margin-top: 32px; }
+        
+        /* FIXED: Removed text-align: justify to stop the weird word gaps */
+        p { margin-bottom: 16px; text-align: left; font-size: 16px; }
+        li { margin-bottom: 8px; text-align: left; }
+
+        /* Professional Contact Box */
+        .contact-box { 
+            background: #f0f7f6; 
+            padding: 24px; 
+            border-radius: 16px; 
+            margin-top: 40px; 
+            border: 1px solid #d1e4e2;
+        }
+        .contact-box h2 { margin-top: 0; border: none; color: #00695C; }
+        .contact-box p { margin-bottom: 8px; color: #444; }
+        .email-link { color: #00695C; font-weight: bold; text-decoration: none; font-size: 17px; }
     </style>
 </head>
 <body>
-
-<div class="container">
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last Updated: May 27, 2026</p>
+    <span class="last-updated">Last Updated: June 10, 2024</span>
+    
+    <p>Wise Medical Apps ("we", "us", or "our") operates the <strong>Medication Wizard</strong> mobile application. Your privacy is our absolute priority. We have designed this app with a privacy-first architecture.</p>
 
-    <p>Wise Medical Apps ("we", "us", or "our") operates the <strong>Medication Wizard</strong> mobile application (the "App"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our App and the choices you have associated with that data.</p>
+    <h2>1. Data Privacy & Health Information</h2>
+    <p><strong>We do not collect or store your personal health data on our servers.</strong> All medication names, schedules, dosages, and intake history are stored 100% locally on your device. We cannot see, sell, or share your medical records.</p>
 
-    <h2>1. Introduction</h2>
-    <p>We are committed to protecting your privacy. We process your data only as described in this policy and in accordance with global data protection standards. By using the App, you agree to the terms outlined here.</p>
-
-    <h2>2. Data Privacy & Health Information</h2>
-    <p>Your health and medication data are highly sensitive. We have designed the App with a <span class="highlight">Privacy-First</span> architecture:</p>
+    <h2>2. Third-Party Services</h2>
+    <p>To provide a better experience, the App uses trusted third-party services that may collect information according to their own policies:</p>
     <ul>
-        <li><strong>Local Storage:</strong> All medication names, dosages, schedules, and history are stored locally on your device using the Room Persistence Library and SharedPreferences. This data never leaves your device unless you initiate a backup.</li>
-        <li><strong>Cloud Backup (Premium):</strong> If you enable the "Cloud Backup" feature, your data is encrypted and transferred directly to your private Google Drive account. We do not maintain servers to store this data and have no access to your backup files.</li>
+        <li>Google Play Services</li>
+        <li>AdMob (Advertising)</li>
+        <li>Firebase (Analytics)</li>
+        <li>Google Drive (Optional Cloud Backup)</li>
     </ul>
 
-    <h2>3. Third-Party Service Providers</h2>
-    <p>To provide core functionality and maintain technical stability, the App uses the following third-party SDKs, which may collect device-identifying information:</p>
-    <ul>
-        <li><strong>Google Play Services:</strong> Required for core Android functionality and account authentication.</li>
-        <li><strong>AdMob (Google):</strong> Used to serve advertisements. AdMob uses the Advertising ID to provide relevant ads and measure performance.</li>
-        <li><strong>Firebase Analytics:</strong> Used to understand general usage patterns to help us improve the App's features.</li>
-        <li><strong>Firebase Crashlytics:</strong> Used to track technical errors and crashes to ensure a stable user experience.</li>
-        <li><strong>Google Play Billing:</strong> Used to process secure Premium upgrades. Financial data is handled exclusively by Google; we never see your payment information.</li>
-    </ul>
+    <h2>3. Security</h2>
+    <p>We value your trust. We use standard security protocols to ensure your locally stored data is safe, but please remember that no method of electronic storage is 100% secure.</p>
 
-    <h2>4. Cookies & Tracking Technologies</h2>
-    <p>While we do not use traditional web cookies, our third-party partners (like AdMob and Firebase) use <strong>Mobile Identifiers</strong> (such as the Android Advertising ID) to uniquely identify your device for analytics and advertising purposes. You can reset these identifiers in your Android system settings at any time.</p>
-
-    <h2>5. System Permissions</h2>
-    <p>The App requests specific permissions to function correctly. You can revoke these at any time in system settings, though it may impact App utility:</p>
-    <ul>
-        <li><strong>Notifications:</strong> To send you scheduled medication reminders.</li>
-        <li><strong>Exact Alarms:</strong> To ensure reminders fire at the precise minute scheduled, even if the device is idle.</li>
-        <li><strong>Internet Access:</strong> To verify Premium status, sync cloud backups, and load relevant content or ads.</li>
-    </ul>
-
-    <h2>6. Data Retention & Deletion</h2>
-    <p>You have full sovereignty over your data:</p>
-    <ul>
-        <li><strong>Manual Deletion:</strong> You can delete all your medications and history at any time using the "Start Fresh" feature within the App settings.</li>
-        <li><strong>Automated Cleanup:</strong> The App periodically purges old history (older than 7 days) to optimize device performance.</li>
-        <li><strong>Uninstallation:</strong> Uninstalling the App will permanently remove all locally stored data from your device.</li>
-    </ul>
-
-    <h2>7. Children’s Privacy</h2>
-    <p>The App is not intended for use by anyone under the age of 13. We do not knowingly collect personally identifiable information from children. If we discover a child under 13 has provided us with personal data, we will delete it immediately from our tracking systems.</p>
-
-    <h2>8. International Compliance (GDPR & CCPA)</h2>
-    <p>We respect your rights under the GDPR (EU/UK) and CCPA (California). 
-        For users in the European Economic Area (EEA), we use the <strong>Google User Messaging Platform (UMP)</strong> to gather explicit consent for data processing before loading advertisements. You have the right to access, update, or delete your data, which can be done directly through the App interface.</p>
-
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Any changes will be reflected by a new "Last Updated" date at the top of this page. We encourage you to review this policy periodically for any updates.</p>
-
-    <div class="contact-section">
+    <div class="contact-box">
         <h2>Contact Us</h2>
         <p>If you have any questions or suggestions about our Privacy Policy, please reach out to us at:</p>
-        <p><span class="highlight">medicationwizard@gmail.com</span></p>
+        <a href="mailto:medicationwizard@gmail.com" class="email-link">medicationwizard@gmail.com</a>
     </div>
-</div>
-
 </body>
 </html>
